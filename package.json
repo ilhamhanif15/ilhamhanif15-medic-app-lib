@@ -11,7 +11,7 @@
       "require": "./dist/my-lib.umd.js"
     }
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Ilham Hanif Anjana",
     "email": "ilhamhanif1512@gmail.com"
