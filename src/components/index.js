@@ -15,4 +15,10 @@ export { default as TextInput } from './inputs/TextInput.vue';
 export { default as PasswordInput } from './inputs/fragments/PasswordInput.vue';
 
 
+// Other Services
+export { AttributeModel } from '../services/form/AttributeModel';
+export { FormHandler } from '../services/form/FormHandler';
+
+
+
 // Other components you plan to publish go here

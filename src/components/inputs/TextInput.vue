@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import { AttributeModel } from "@//services/form/AttributeModel"
+import { AttributeModel } from "../../services/form/AttributeModel"
 
 export default {
   name: "text-input",
