@@ -68,7 +68,8 @@ export default {
       default: ""
     },
     attrModel: {
-      Type: AttributeModel
+      Type: AttributeModel,
+      default : () => new AttributeModel("")
     }
   }
 }

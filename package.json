@@ -11,7 +11,7 @@
       "require": "./dist/my-lib.umd.js"
     }
   },
-  "version": "0.0.3",
+  "version": "0.0.6",
   "author": {
     "name": "Ilham Hanif Anjana",
     "email": "ilhamhanif1512@gmail.com"
@@ -35,6 +35,9 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.2.0",
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23",
     "vite": "^2.8.0"
   }
 }
