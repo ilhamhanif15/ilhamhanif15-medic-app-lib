@@ -9,9 +9,8 @@
             }"
             :name="name"
             :placeholder="placeholder"
-            v-model="modelValue"
+            v-model="model"
             :disabled="disabled"
-            @input="$emit('update:modelValue', modelValue)"
         >
         </textarea>
         <div class="space-y-1">
@@ -26,6 +25,8 @@
 </template>
 
 <script>
+import { AttributeModel } from "../../services/form/AttributeModel"
+
 export default {
     name: "text-area-input",
     props: {
@@ -37,7 +38,7 @@ export default {
             Type: String,
             default: ""
         },
-            placeholder: {
+        placeholder: {
             Type: String,
             default: ""
         },
@@ -64,8 +65,26 @@ export default {
         hint: {
             Type: String,
             default: ""
+        },
+        attrModel: {
+            Type: AttributeModel,
+            default : null
+        },
+    },
+    computed: {
+        model: {
+            get() {
+                return this.attrModel !== null ? this.attrModel.model : this.modelValue
+            },
+            set(val) {
+                if (this.attrModel !== null) {
+                    this.attrModel.model = val
+                } else {
+                    this.$emit('update:modelValue', val)
+                }
+            }
         }
-    }
+    },
 }
 </script>
 

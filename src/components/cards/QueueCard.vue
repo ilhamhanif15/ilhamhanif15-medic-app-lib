@@ -5,6 +5,8 @@
             'bg-danger text-white'  : type === 'danger',
             'bg-info text-white'    : type === 'info',
             'bg-success text-white' : type === 'success',
+            'bg-primary text-white' : type === 'primary',
+            'bg-secondary text-white' : type === 'secondary',
         }"
     >
         <template v-if="!isDescriptionView">

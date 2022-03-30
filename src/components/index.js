@@ -9,10 +9,13 @@ export { default as TopBackground } from './cards/TopBackground.vue';
 export { default as UserProfileSnippet } from './cards/UserProfileSnippet.vue';
 
 export { default as BrowseImage } from './inputs/BrowseImage.vue';
+export { default as BrowseImageLong } from './inputs/BrowseImageLong.vue';
 export { default as SelectInput } from './inputs/SelectInput.vue';
 export { default as TextAreaInput } from './inputs/TextAreaInput.vue';
 export { default as TextInput } from './inputs/TextInput.vue';
 export { default as PasswordInput } from './inputs/fragments/PasswordInput.vue';
+
+export { default as TitleInfo } from './text/TitleInfo.vue';
 
 
 // Other Services
