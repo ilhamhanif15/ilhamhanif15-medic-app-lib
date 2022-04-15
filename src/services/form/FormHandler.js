@@ -117,6 +117,21 @@ export class FormHandler {
 
         return res
     }
+    
+    /**
+     * Return all attribute key with value on it as Form Data
+     * 
+     * @return {*}
+     */
+    getAttributeValuesAsFormData() {
+        const formData = new FormData()
+
+        Object.keys(this.dataAttributes).forEach(attributeKey => {
+            formData.append(attributeKey, this.dataAttributes[attributeKey].model)
+        })
+
+        return formData
+    }
 
     /**
      * Reset all attribute to default value

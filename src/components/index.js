@@ -21,6 +21,7 @@ export { default as TitleInfo } from './text/TitleInfo.vue';
 // Other Services
 export { AttributeModel } from '../services/form/AttributeModel';
 export { FormHandler } from '../services/form/FormHandler';
+export { ToastService } from "../services/ToastService";
 
 
 
